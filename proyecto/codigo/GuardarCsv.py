@@ -165,24 +165,3 @@ def Lz77Decompression(ca):
     i += 1
   cinta += final
   return cinta
-
-
-def __main__():
-  bajar()
-  matriz = guardarArr()
-  print(matriz)
-  print(matriz.size)
-  print(matriz[1][1])
-  matriz_bilineal = InterpolacionBilineal(matriz)
-  print(matriz_bilineal)
-  print(matriz_bilineal.size)
-  columnas, filas = sacarTamanio(matriz_bilineal)
-  print("filas = ", filas)
-  print("columnas = ", columnas)
-  escribirArchivo(matriz_bilineal, filas)
-  #cadena = pasarAString(matriz)
-  #print(cadena[0:10])
-  #escribirArchivo(cadena, 2)
-
-
-__main__()
